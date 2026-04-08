@@ -20,3 +20,15 @@ This project documents my hands-on experience building a Windows Server environm
 - [ ] Install Active Directory
 - [ ] Create users and groups
 - [ ] Apply Group Policy
+
+## Issue Encountered
+Received error: "There is an error selecting this partition for install."
+
+## Root Cause
+The virtual disk partition was not properly initialized or formatted.
+
+## Resolution
+Deleted the existing partition and allowed Windows Server installer to automatically create and format partitions using unallocated space.
+
+## Lesson Learned
+Proper disk initialization and partitioning is required before OS installation. When errors occur, removing existing partitions and starting with unallocated space can resolve installation issues.
