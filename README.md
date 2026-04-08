@@ -50,3 +50,93 @@ Initial VM setup included unattended installation and improper disk initializati
 
 ## Lesson Learned
 When OS installation fails in a VM, rebuilding a clean one is often faster and more reliable than troubleshooting a corrupted setup. Also, avoid automated/unattended installs when learning core system setup.
+
+## Issue Encountered - Installed Server Core Instead of Desktop Experience
+
+## Problem
+Installed Windows Server without "Desktop Experience," resulting in a command-line-only interface (Server Core).
+
+## Root Cause
+Incorrect selection during installation phase.
+
+## Resolution
+Reinstalled Windows Server and selected "Standard Evaluation (Desktop Experience)" to enable graphical user interface.
+
+## Lesson Learned
+Windows Server installation includes multiple modes. "Server Core" is minimal and command-line-based, while "Desktop Experience" provides a GUI. Proper selection is critical depending on use case.
+
+## Windows Server Installation Completed
+
+## Summary
+Successfully installed Windows Server 2025 Standard Evaluation (Desktop Experience) on a virtual machine using Oracle VirtualBox.
+
+## Configuration
+- Administrator account configured
+- GUI-based environment enabled (Desktop Experience)
+
+## Outcome
+Server is now accessible via desktop interface and ready for further configuration such as renaming, networking, and Active Directory setup.
+
+## Server Configuration
+
+### Server Name Change
+- Renamed server from WS2025-DC01 to LAB-DC01
+- Restarted system to apply changes
+
+### Network Configuration
+- Assigned static IP address
+- Configured DNS to point to local server
+- Prepared environment for Active Directory installation
+
+### Importance
+Static IP and proper naming are critical for domain controller functionality and network stability.
+
+## Network Adapter Configuration
+
+Attempted to rename network adapter while interface was still in "Identifying" state. Learned that network initialization can delay certain GUI actions. Continued with configuration and used alternative methods when needed.
+
+## Active Directory Installation
+
+### Role Installed
+- Active Directory Domain Services (AD DS)
+
+### Domain Configuration
+- Created new forest
+- Domain name: lab.local
+
+### Domain Controller Promotion
+- Server promoted to Domain Controller
+- Configured Directory Services Restore Mode (DSRM)
+
+### Outcome
+Server is now functioning as a Domain Controller and managing directory services for the lab environment.
+
+## Domain Controller Promotion
+
+### Actions Completed
+- Promoted server to Domain Controller
+- Created new forest: lab.local
+- Configured Directory Services Restore Mode (DSRM)
+
+### Services Enabled
+- Active Directory Domain Services
+- DNS Server
+
+### Outcome
+Server is now functioning as a Domain Controller, providing centralized authentication and directory services.
+
+## Issue Encountered - Password Policy Enforcement
+
+### Problem
+Unable to create user due to password not meeting Active Directory complexity requirements.
+
+### Root Cause
+Domain-level password policy enforces:
+- Minimum length
+- Complexity (uppercase, lowercase, number, special character)
+
+### Resolution
+Updated password to meet complexity requirements and successfully created user.
+
+### Lesson Learned
+Active Directory enforces security policies by default, ensuring strong authentication practices across the domain.
