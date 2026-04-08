@@ -15,10 +15,10 @@ This project documents my hands-on experience building a Windows Server environm
 ## Progress
 - [x] Created Virtual Machine
 - [x] Installed Windows Server
-- [ ] Rename server
-- [ ] Configure static IP
-- [ ] Install Active Directory
-- [ ] Create users and groups
+- [x] Rename server
+- [x] Configure static IP
+- [x] Install Active Directory
+- [x] Create users and groups
 - [ ] Apply Group Policy
 
 ## Issue Encountered
