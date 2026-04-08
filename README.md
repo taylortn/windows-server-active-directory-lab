@@ -140,3 +140,31 @@ Updated password to meet complexity requirements and successfully created user.
 
 ### Lesson Learned
 Active Directory enforces security policies by default, ensuring strong authentication practices across the domain.
+
+## Issue Encountered - UEFI Boot Failure
+
+### Problem
+Client VM failed to boot from ISO and entered UEFI Boot Manager.
+
+### Root Cause
+UEFI boot mode caused issues with recognizing the bootable ISO.
+
+### Resolution
+Disabled EFI in VirtualBox settings and prioritized optical drive in boot order.
+
+### Lesson Learned
+Boot mode (UEFI vs BIOS) can affect virtual machine behavior and ISO boot compatibility.
+
+## Issue Encountered - Secure Boot Blocking Installation
+
+### Problem
+VM failed to boot from Windows ISO while Secure Boot and UEFI were enabled.
+
+### Root Cause
+Secure Boot prevented unsigned or incompatible boot media from loading in VirtualBox environment.
+
+### Resolution
+Disabled Secure Boot and switched to BIOS boot mode for compatibility.
+
+### Lesson Learned
+Secure Boot and UEFI can interfere with virtual machine installations, especially in lab environments.
