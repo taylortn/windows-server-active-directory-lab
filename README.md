@@ -42,33 +42,31 @@ This lab demonstrates hands-on experience with domain controller setup, DNS conf
 
   ## ⚠️ Key Challenges & Solutions
 
-### 1. Disk Partition Error During Installation
+### Disk Partition Error During Installation
 - **Cause:** Improper disk initialization
 - **Fix:** Deleted all partitions and allowed automatic setup
 - **Result:** Successful installation
 
-### 2. Server Core Installed Instead of Desktop Experience
+### Server Core Installed Instead of Desktop Experience
 - **Cause:** Incorrect OS selection
 - **Fix:** Reinstalled using the Desktop Experience option
 - **Result:** Full GUI access restored
 
-### 3. UEFI Boot Failure
+### UEFI Boot Failure
 - **Cause:** Boot mode mismatch in VirtualBox
 - **Fix:** Disabled EFI and adjusted boot order
 - **Result:** System booted successfully
 
  ## 📸 Lab Screenshots
 
-### Active Directory Domain Services Installed
-![AD DS Installed](images/ad-ds-installed.png)
-
-### Server Roles Configuration
+### Active Directory Domain Services Installation
 ![Server Roles](images/server-roles-ad-ds.png)
 
 ### Organizational Unit Creation
 ![OU](images/ad-create-ou.png)
 
 ### User Creation
+- Created a test user within Active Directory to simulate identity management.
 ![User](images/ad-create-user.png)
 
 ### Active Directory Users & Computers
@@ -76,6 +74,7 @@ This lab demonstrates hands-on experience with domain controller setup, DNS conf
 
 ### Static IP Configuration
 ![Network](images/network-static-ip.png)
+Configured a static IP address to ensure consistent network communication and proper DNS functionality.
 
 ## 🎯 Final Outcome
 
@@ -84,6 +83,7 @@ Successfully deployed a fully functional Active Directory lab environment, inclu
 - DNS configuration
 - User and group management
 - Group Policy enforcement
+- This project demonstrates foundational system administration skills applicable to enterprise environments.
 
 This environment simulates real-world enterprise infrastructure and prepares for system administration roles.
 
