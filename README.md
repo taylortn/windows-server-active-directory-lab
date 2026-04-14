@@ -66,7 +66,7 @@ This lab demonstrates hands-on experience with domain controller setup, DNS conf
 ![OU](images/ad-create-ou.png)
 
 ### User Creation
-- Created a test user within Active Directory to simulate identity management.
+Created a test user within Active Directory to simulate identity management.
 ![User](images/ad-create-user.png)
 
 ### Active Directory Users & Computers
