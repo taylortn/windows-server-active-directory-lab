@@ -57,18 +57,27 @@ This lab demonstrates hands-on experience with domain controller setup, DNS conf
 - **Fix:** Disabled EFI and adjusted boot order
 - **Result:** System booted successfully
 
-  ## 📸 Lab Screenshots
+ ## 📸 Lab Screenshots
 
-### Domain Controller Setup
-![Domain Controller](images/domain-controller.png)
+### Active Directory Domain Services Installed
+![AD DS Installed](images/ad-ds-installed.png)
+
+### Server Roles Configuration
+![Server Roles](images/server-roles-ad-ds.png)
+
+### Organizational Unit Creation
+![OU](images/ad-create-ou.png)
+
+### User Creation
+![User](images/ad-create-user.png)
 
 ### Active Directory Users & Computers
-![ADUC](images/aduc.png)
+![ADUC](images/ad-users-computers.png)
 
-### Group Policy Configuration
-![GPO](images/gpo.png)
+### Static IP Configuration
+![Network](images/network-static-ip.png)
 
-  ## 🎯 Final Outcome
+## 🎯 Final Outcome
 
 Successfully deployed a fully functional Active Directory lab environment, including:
 - Domain Controller setup
