@@ -70,7 +70,7 @@ Created a test user within Active Directory to simulate identity management.
 ![User](images/ad-create-user.png)
 
 ### Active Directory Users & Computers
-![ADUC](images/ad-users-computers.png)
+![ADUC](images/ad-users-computer.png)
 
 ### Static IP Configuration
 ![Network](images/network-static-ip.png)
